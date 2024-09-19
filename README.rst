@@ -12,7 +12,7 @@ Configuration
 
 Company
 -------
-*`Cybrosys Techno Solutions <https://cybrosys.com/>`__
+* `Cybrosys Techno Solutions <https://cybrosys.com/>`__
 
 License
 -------
@@ -21,12 +21,11 @@ General Public License, Version 3 (LGPL v3).
 
 Credits
 -------
-Developer:  (V14) Mohammed Dilshad Tk @cybrosys, Contact: odoo@cybrosys.com
+* Developer: (V15) Mohammed Dilshad Tk , Contact: odoo@cybrosys.com
 
 Contacts
 --------
 * Mail Contact : odoo@cybrosys.com
-* Website : https://cybrosys.com
 
 Bug Tracker
 -----------

@@ -21,13 +21,12 @@
 #############################################################################
 {
     'name': "Mass Journal Entry Cancel",
-    "version": "14.0.1.0.0",
+    "version": "15.0.1.0.0",
     "category": "Accounting",
     "summary": "User can cancel or reset multiple journal entries ",
-    "description": " This module helps cancel or reset multiple journal"
-                   "entries simultaneously.User can select multiple journal"
-                   "entries from the tree view and we can either cancel or"
-                   "reset selected journal entries. ",
+    "description": """ This module helps cancel or reset multiple journal 
+     entries simultaneously.User can select multiple journal entries from the 
+     tree view and we can either cancel or reset selected journal entries. """,
     'author': 'Cybrosys Techno Solutions',
     'company': 'Cybrosys Techno Solutions',
     'maintainer': 'Cybrosys Techno Solutions',
@@ -37,7 +36,7 @@
         'security/account_move_multi_cancel_groups.xml',
         'security/ir.model.access.csv',
         'data/ir_actions_data.xml',
-        'wizard/account_move_cancel_reset_views.xml'
+        'wizards/account_move_cancel_reset_views.xml'
     ],
     'images': ['static/description/banner.png'],
     'license': 'LGPL-3',

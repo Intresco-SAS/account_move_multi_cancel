@@ -23,7 +23,7 @@ from odoo import models
 
 
 class AccountMove(models.Model):
-    """ Class for cancel and reset the journal entries """
+    """ Server action function for cancel and reset journal entries """
     _inherit = "account.move"
 
     def cancel_multiple_journal_entry(self):
@@ -32,14 +32,13 @@ class AccountMove(models.Model):
             'type': 'ir.actions.act_window',
             'name': 'Multiple Journal Entry Cancel',
             'view_mode': 'form',
-            'views': [(self.env.ref('account_move_multi_cancel.'
-                                'account_move_cancel_reset_view_form')
+            'views': [(self.env.ref(
+                'account_move_multi_cancel.'
+                'cancel_account_move_cancel_reset_view_form')
                        .id, 'form')],
             'target': 'new',
             'res_model': 'account.move.cancel.reset',
-            'context': {
-                'active_ids': self._context.get('active_ids')
-            }
+            'context': {'active_ids': self._context.get('active_ids')}
         }
 
     def reset_multiple_journal_entry(self):
@@ -49,11 +48,9 @@ class AccountMove(models.Model):
             'name': 'Multiple Journal Entry Reset',
             'view_mode': 'form',
             'views': [(self.env.ref(
-                'account_move_multi_cancel.reset_account_move_cancel_reset_view_form')
+                'account_move_multi_cancel.account_move_cancel_reset_view_form')
                        .id, 'form')],
             'target': 'new',
             'res_model': 'account.move.cancel.reset',
-            'context': {
-                'active_ids': self._context.get('active_ids')
-            }
+            'context': {'active_ids': self._context.get('active_ids')}
         }
